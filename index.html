@@ -6,23 +6,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
-    
     <div class="welcome">
         <h1>Welcome to My Restaurant</h1>
             <ul>
+                <li ui-sref-active="active" ui-sref="home" role="presentation"><a href="#">Home</a></li>
                 <li ui-sref-active="active" ui-sref="categories" role="presentation"><a href="#">Categories</a></li>
             </ul>
-    </div>
-    <style>
-        .welcome { 
-            text-align: center;
-            list-style-position: inside;
-        }
-    </style>
-        
+    </div>  
         <ui-view></ui-view>
 
     <!-- Libraries -->
@@ -48,11 +41,11 @@
     <script src="routes/routes.js"></script>
 
     <!-- Templates -->
-    <script src="templates/home.template.html"></script>
+    <!-- <script src="templates/home.template.html"></script>
     <script src="templates/categories.component.html"></script>
     <script src="templates/categories.template.html"></script>
     <script src="templates/items.component.html"></script>
-    <script src="templates/items.template.html"></script>
+    <script src="templates/items.template.html"></script> -->
 </body>
 
 </html>
