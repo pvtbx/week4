@@ -8,13 +8,20 @@
     <title>Document</title>
 </head>
 <body>
-    <h3>Welcome to My Restaurant</h3>
-        <div>
-            <ol>
-                <li ui-sref-active="active" ui-sref="home" role="presentation"><a href="#">Home</a></li>
+
+    
+    <div class="welcome">
+        <h1>Welcome to My Restaurant</h1>
+            <ul>
                 <li ui-sref-active="active" ui-sref="categories" role="presentation"><a href="#">Categories</a></li>
-            </ol>
-        </div>
+            </ul>
+    </div>
+    <style>
+        .welcome { 
+            text-align: center;
+            list-style-position: inside;
+        }
+    </style>
         
         <ui-view></ui-view>
 

@@ -1,5 +1,15 @@
-<div>
-	<button ng-repeat="category in $ctrl.categories" ui-sref="items({categoryShortName: category.short_name, categoryName:category.name})">
+<div class="welcometorestaurant">
+	<button class="myBtn" ng-repeat="category in $ctrl.categories" ui-sref="items({categoryShortName: category.short_name, categoryName:category.name})">
 		{{category.name}}
 	</button>
 </div>
+<style>
+	.welcometorestaurant {
+		text-align: center;
+	}
+	.myBtn {
+		color: blue;
+		margin: 2px;
+		background-color: aqua;
+	}
+</style>
